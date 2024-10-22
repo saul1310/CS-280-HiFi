@@ -5,6 +5,8 @@ import Community from './Pages/Community'; // Example for another screen
 import Home from './Pages/Home';
 import Leaderboard from './Pages/Leaderboard';
 import Rental from './Pages/Rental';
+import Signin from './Pages/Signin';
+import Signup from './Pages/Signup';
 
 
 const Stack = createStackNavigator();
@@ -28,6 +30,13 @@ export default function App() {
         />
 
         <Stack.Screen name = "Rental" component = {Rental}
+          options = {{headerShown:false}}
+        />
+         <Stack.Screen name = "Signup" component = {Signup}
+          options = {{headerShown:false}}
+        />
+
+          <Stack.Screen name = "Signin" component = {Signin}
           options = {{headerShown:false}}
         />
       </Stack.Navigator>

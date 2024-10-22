@@ -35,6 +35,24 @@ const Navbar = ({ navigation }) => {
              
              
                 </View>
+
+                <View style={styles.navbarText}>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('Signin')}>
+                        <Text style={styles.navbarText}>Sign in</Text> {/* Text inside button */}
+                    </TouchableOpacity>
+             
+             
+                </View>
+
+                <View style={styles.navbarText}>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('Signup')}>
+                        <Text style={styles.navbarText}>Sign up</Text> {/* Text inside button */}
+                    </TouchableOpacity>
+             
+             
+                </View>
                 
                 {/* Add more items as needed */}
             </View>
