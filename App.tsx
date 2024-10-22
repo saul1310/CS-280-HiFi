@@ -1,24 +1,45 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import NavBar from './components/NavBar';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Community from './Pages/Community'; // Example for another screen
+import Home from './Pages/Home';
+import Leaderboard from './Pages/Leaderboard';
+import Rental from './Pages/Rental';
+import Signin from './Pages/Signin';
+import Signup from './Pages/Signup';
+
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View>
-    
-      <NavBar/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={Home} 
+        options = {{headerShown:false}}
+        />
+        <Stack.Screen name="Community" component={Community}
+          options = {{headerShown:false}}
+        
+        />
+        
+
+        <Stack.Screen name = "Leaderboard" component = {Leaderboard}
+          options = {{headerShown:false}}
+        
+        />
+
+        <Stack.Screen name = "Rental" component = {Rental}
+          options = {{headerShown:false}}
+        />
+         <Stack.Screen name = "Signup" component = {Signup}
+          options = {{headerShown:false}}
+        />
+
+          <Stack.Screen name = "Signin" component = {Signin}
+          options = {{headerShown:false}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-
-
-
-
-
-
-
-
-  
-});
