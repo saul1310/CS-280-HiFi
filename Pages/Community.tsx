@@ -5,7 +5,7 @@ import { View, Text } from 'react-native';
 const Community = () => {
   return (
     <View>
-      <Text>Community Page</Text>
+      <Text>Welcome to the Community page!</Text>
     </View>
   );
 };
