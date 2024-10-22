@@ -26,6 +26,15 @@ const Navbar = ({ navigation }) => {
              
              
                 </View>
+
+                <View style={styles.navbarText}>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('Rental')}>
+                        <Text style={styles.navbarText}>Rental</Text> {/* Text inside button */}
+                    </TouchableOpacity>
+             
+             
+                </View>
                 
                 {/* Add more items as needed */}
             </View>
