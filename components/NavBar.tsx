@@ -14,9 +14,19 @@ const Navbar = ({ navigation }) => {
                         onPress={() => navigation.navigate('Community')}>
                         <Text style={styles.navbarText}>Community</Text> {/* Text inside button */}
                     </TouchableOpacity>
+             
+             
                 </View>
-                <Text style={styles.navbarText}>Item 2</Text>
-                <Text style={styles.navbarText}>Item 3</Text>
+
+                <View style={styles.navbarText}>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('Leaderboard')}>
+                        <Text style={styles.navbarText}>Leaderboard</Text> {/* Text inside button */}
+                    </TouchableOpacity>
+             
+             
+                </View>
+                
                 {/* Add more items as needed */}
             </View>
         </View>
