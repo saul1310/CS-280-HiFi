@@ -1,7 +1,7 @@
 // components/NavBar.tsx
 import React from 'react';
 import { View, Text, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
-
+import Icon from 'react-native-vector-icons/Ionicons';
 // Get the screen dimensions
 const { width } = Dimensions.get('window');
 
@@ -9,14 +9,34 @@ const Navbar = ({ navigation }) => {
     return (
         <View style={styles.navbar}>
             <View style={styles.navbar_items}>
-                <View style={styles.navbarText}>
+
+
+            <View style={styles.navbarText}>
+                    
+                    
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('Community')}>
-                        <Text style={styles.navbarText}>Community</Text> {/* Text inside button */}
+                        onPress={() => navigation.navigate('Home')}>
+                        <View style={styles.navbarText}>
+                        <Icon name="home" size={30} color="#900" />
+                            </View> {/* Text inside button */}
                     </TouchableOpacity>
              
              
                 </View>
+
+              
+                <View style={styles.navbarText}>
+                        
+                        
+                        <TouchableOpacity
+                            onPress={() => navigation.navigate('Community')}>
+                            <Text style={styles.navbarText}>Community</Text> {/* Text inside button */}
+                        </TouchableOpacity>
+                
+                
+                </View>
+                
+                
 
                 <View style={styles.navbarText}>
                     <TouchableOpacity

@@ -7,6 +7,7 @@ import Leaderboard from './Pages/Leaderboard';
 import Rental from './Pages/Rental';
 import Signin from './Pages/Signin';
 import Signup from './Pages/Signup';
+import { FirebaseApp } from 'firebase/app';
 
 
 const Stack = createStackNavigator();
