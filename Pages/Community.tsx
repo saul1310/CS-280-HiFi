@@ -13,8 +13,9 @@ const Community = ({ navigation }) => {
      
      
      
-      <TouchableOpacity onPress = {() => navigation.navigate('Create')}>
+      <TouchableOpacity onPress = {() => navigation.navigate('Join')}>
         <View style={styles.Groups}>
+          <Text> Join a Group</Text>
           
           </View> {/* Added red box */}
 
@@ -23,8 +24,9 @@ const Community = ({ navigation }) => {
       
       
      
-      <TouchableOpacity onPress = {() => navigation.navigate('Join')}>
+      <TouchableOpacity onPress = {() => navigation.navigate('Create')}>
         <View style={styles.Groups}>
+          <Text>  Create a Group</Text>
           
           </View> {/* Added red box */}
 
