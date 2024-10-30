@@ -3,7 +3,7 @@ import {View, Text,TouchableOpacity,StyleSheet} from 'react-native'
 
 const Join = () => {
     return (
-        <View>
+        <View style = {styles.container}>
             The Join Page
         </View>
 
@@ -12,6 +12,14 @@ const Join = () => {
 };
 
 const styles = StyleSheet.create({
+    container : {
+        flex : 1,
+        justifyContent: 'center',
+        alignItems:'center',
+        backgroundColor: '#F8F4E8',
+
+
+    }
 
 
 

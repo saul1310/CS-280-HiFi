@@ -15,7 +15,7 @@ const Community = ({ navigation }) => {
      
       <TouchableOpacity onPress = {() => navigation.navigate('Join')}>
         <View style={styles.Groups}>
-          <Text> Join a Group</Text>
+          <Text style = {styles.Boxtext}> Join a Group</Text>
           
           </View> {/* Added red box */}
 
@@ -34,7 +34,7 @@ const Community = ({ navigation }) => {
       
     
       </View>
-
+      <Text style={styles.text}>Upcoming Events </Text>
       <View style = {styles.largeButton}>
         <View style = {styles.Events}>
           
@@ -64,13 +64,22 @@ const styles = StyleSheet.create({
     display : 'flex',
     flexDirection: 'row',
     padding:40,
+
  
+
+
+  },
+  
+  Boxtext:{
+    display :'flex',
+    justifyContent:'center',
+    alignItems: 'center',
+    
 
 
 
 
   },
-
 
   text: {
     fontSize: 24,
@@ -82,6 +91,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f5bf14', // Red background
     borderRadius:40,
     marginRight:20,
+    justifyContent: 'center',
+    alignItems : 'center',
   },
   Events: {
 
