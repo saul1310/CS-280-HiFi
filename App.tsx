@@ -7,6 +7,7 @@ import Leaderboard from './Pages/Leaderboard';
 import Rental from './Pages/Rental';
 import Signin from './Pages/Signin';
 import Signup from './Pages/Signup';
+import Create from './Pages/Create';
 import { FirebaseApp } from 'firebase/app';
 
 
@@ -38,6 +39,11 @@ export default function App() {
         />
 
           <Stack.Screen name = "Signin" component = {Signin}
+          options = {{headerShown:false}}
+        />
+
+
+        <Stack.Screen name= "Create" component = {Create}
           options = {{headerShown:false}}
         />
       </Stack.Navigator>

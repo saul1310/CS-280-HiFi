@@ -1,6 +1,6 @@
 // Pages/Community.tsx
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet,TouchableOpacity } from 'react-native';
 import Navbar from '../components/NavBar';
 
 const Community = ({ navigation }) => {
@@ -8,16 +8,31 @@ const Community = ({ navigation }) => {
     <View style={styles.container}>
       <Navbar navigation={navigation} />
       <Text style={styles.text}>Welcome to the Community page!</Text>
+    
       <View style = {styles.largeButton}>
+     
+     
+     
+      <TouchableOpacity onPress = {() => navigation.navigate('Create')}>
+        <View style={styles.Groups}>
+          
+          </View> {/* Added red box */}
+
+      </TouchableOpacity>
       
-      <View style={styles.Groups}>
-        
-        </View> {/* Added red box */}
-      <View style={styles.Groups}>
-        
-        </View> {/* Added red box */}
+      
+      
+     
+      <TouchableOpacity onPress = {() => navigation.navigate('Create')}>
+        <View style={styles.Groups}>
+          
+          </View> {/* Added red box */}
+
+      </TouchableOpacity>
+      
     
       </View>
+
       <View style = {styles.largeButton}>
         <View style = {styles.Events}>
           
