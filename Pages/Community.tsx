@@ -17,7 +17,7 @@ const Community = ({ navigation }) => {
         <View style={styles.Groups}>
           <Text style = {styles.Boxtext}> Join a Group</Text>
           
-          </View> {/* Added red box */}
+          </View>
 
       </TouchableOpacity>
       
@@ -28,7 +28,7 @@ const Community = ({ navigation }) => {
         <View style={styles.Groups}>
           <Text>  Create a Group</Text>
           
-          </View> {/* Added red box */}
+          </View> 
 
       </TouchableOpacity>
       
@@ -36,6 +36,8 @@ const Community = ({ navigation }) => {
       </View>
       <Text style={styles.text}>Upcoming Events </Text>
       <View style = {styles.largeButton}>
+       
+       
         <View style = {styles.Events}>
           
         </View>
