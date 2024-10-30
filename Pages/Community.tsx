@@ -8,7 +8,30 @@ const Community = ({ navigation }) => {
     <View style={styles.container}>
       <Navbar navigation={navigation} />
       <Text style={styles.text}>Welcome to the Community page!</Text>
-      <View style={styles.redBox}></View> {/* Added red box */}
+      <View style = {styles.largeButton}>
+      
+      <View style={styles.Groups}>
+        
+        </View> {/* Added red box */}
+      <View style={styles.Groups}>
+        
+        </View> {/* Added red box */}
+    
+      </View>
+      <View style = {styles.largeButton}>
+        <View style = {styles.Events}>
+          
+        </View>
+
+        <View style = {styles.Events}>
+          
+        </View>
+
+        <View style = {styles.Events}>
+          
+        </View>
+
+      </View>
     </View>
   );
 };
@@ -20,14 +43,37 @@ const styles = StyleSheet.create({
     alignItems: 'center', // Center content horizontally
     backgroundColor: '#F8F4E8',
   },
+  largeButton:{
+    display : 'flex',
+    flexDirection: 'row',
+    padding:40,
+ 
+
+
+
+
+  },
+
+
   text: {
     fontSize: 24,
     marginBottom: 20,
   },
-  redBox: {
-    width: 150, // Box width
-    height: 150, // Box height
-    backgroundColor: '#0d2410', // Red background
+  Groups: {
+    width: 300, // Box width
+    height: 300, // Box height
+    backgroundColor: '#f5bf14', // Red background
+    borderRadius:20,
+    marginRight:20,
+  },
+  Events: {
+
+    width: 200, // Box width
+    height: 200, // Box height
+    backgroundColor: '#01b1fe', // Red background
+    borderRadius:20,
+    marginRight:20,
+
   },
 });
 
