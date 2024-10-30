@@ -30,10 +30,10 @@ const styles = StyleSheet.create({
     },
 
     LeftArrow : {
-        justifyContent :
+        justifyContent : 'center',
         
 
-    }
+    },
 
 
 

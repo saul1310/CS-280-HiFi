@@ -1,7 +1,7 @@
 import React from "react";
 import {View, Text,TouchableOpacity,StyleSheet} from 'react-native'
 
-const Join = () => {
+const Event3= () => {
     return (
         <View style = {styles.container}>
             The Join Page
@@ -28,4 +28,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Join;
+export default Event3;
