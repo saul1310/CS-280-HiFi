@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     width: 300, // Box width
     height: 300, // Box height
     backgroundColor: '#f5bf14', // Red background
-    borderRadius:20,
+    borderRadius:40,
     marginRight:20,
   },
   Events: {
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     width: 200, // Box width
     height: 200, // Box height
     backgroundColor: '#01b1fe', // Red background
-    borderRadius:20,
+    borderRadius:40,
     marginRight:20,
 
   },
