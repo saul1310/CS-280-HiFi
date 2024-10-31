@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons'; // Ensure you import Ionicons
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Join = ({ navigation }) => {
     return (
@@ -10,6 +10,13 @@ const Join = ({ navigation }) => {
                     <Ionicons name="arrow-back-outline" size={24} color="#333" />
                 </TouchableOpacity>
                 <Text style={styles.headertext}>Join a Group!</Text>
+            </View>
+
+            <View style={styles.GroupContainer}>
+                <View style={styles.Group}>
+                   
+                    <Text>Group Details Here</Text>
+                </View>
             </View>
         </View>
     );
@@ -26,24 +33,40 @@ const styles = StyleSheet.create({
 
     headerbox: {
         width: '100%',
-        flexDirection: 'row',  // Align items horizontally
-        alignItems: 'center',   // Center items vertically
-        justifyContent: 'flex-start', // Align items to the start
-        paddingVertical: 10,    // Add some vertical padding
-        paddingHorizontal: 15,   // Add horizontal padding
-        backgroundColor: 'white', // Optional: Set background color
+        flexDirection: 'row', 
+        alignItems: 'center',   
+        justifyContent: 'flex-start', 
+        paddingVertical: 10,   
+        paddingHorizontal: 15,   
+        backgroundColor: 'white', 
     },
 
     headertext: {
         fontSize: 30,
         fontWeight: 'bold',
-        marginLeft: 10, // Add margin to separate text from the button
+        marginLeft: 10, 
         color: '#333',
     },
 
-    Group : {
+    GroupContainer: {
+        flex: 1,            
+        flexDirection: 'column',
+        alignItems: 'center', 
+        width: '100%',       
+    },
 
-
+    Group: {
+        width: '100%',         
+        height: 60,       
+        backgroundColor: '#01b1fe',
+        borderRadius: 10,    
+        marginVertical: 10, 
+        padding: 10,        
+        shadowColor: '#000',  
+        shadowOffset: { width: 0, height: 2 }, 
+        shadowOpacity: 0.3,   
+        shadowRadius: 4,    
+    
     },
 });
 
