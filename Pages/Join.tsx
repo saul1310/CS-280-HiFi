@@ -19,6 +19,7 @@ const Join = ({ navigation }) => {
                     <Text style = {styles.Clan_info}>Cycle Fiends </Text>
                     <View style = {styles.Join_button}>
                         <Text style = {styles.Join_text}> Join </Text>
+                        
                         </View>
                     <Text style = {styles.Clan_altinfo}> 2/12</Text>
                 </View>
@@ -141,7 +142,7 @@ const styles = StyleSheet.create({
 
     Clan_info: {
         flex: 2, // Takes up more space for longer names
-        color: '#000',
+        color: 'white',
     },
 
     Join_button: {
@@ -164,7 +165,7 @@ const styles = StyleSheet.create({
 
     Clan_altinfo: {
         flex: 1, // Ensures space for alt info
-        color: '#000',
+        color: 'white',
         textAlign: 'right', // Aligns text to the right
     },
 });
