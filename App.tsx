@@ -9,6 +9,9 @@ import Signin from './Pages/Signin';
 import Signup from './Pages/Signup';
 import Create from './Pages/Create';
 import Join from './Pages/Join';
+import Event1 from './Pages/Event1';
+import Event2 from './Pages/Event2';
+import Event3 from './Pages/Event3';
 import { FirebaseApp } from 'firebase/app';
 
 
@@ -51,6 +54,23 @@ export default function App() {
         <Stack.Screen name= "Join" component = {Join}
           options = {{headerShown:false}}
         />
+
+        <Stack.Screen name= "Event1" component = {Event1}
+          options = {{headerShown:false}}
+        />
+
+        <Stack.Screen name= "Event2" component = {Event2}
+          options = {{headerShown:false}}
+        />
+
+        <Stack.Screen name= "Event3" component = {Event3}
+          options = {{headerShown:false}}
+        />
+
+
+
+
+
       </Stack.Navigator>
     </NavigationContainer>
   );

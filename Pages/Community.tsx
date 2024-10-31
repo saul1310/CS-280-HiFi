@@ -36,9 +36,17 @@ const Community = ({ navigation }) => {
       </View>
       <Text style={styles.text}>Upcoming Events </Text>
       <View style = {styles.largeButton}>
-        <View style = {styles.Events}>
+       
+       
+        <TouchableOpacity onPress = {() => navigation.navigate('Event1')}>
+         <View style = {styles.Events}>
+
+         </View>
+      
+
+      </TouchableOpacity>
           
-        </View>
+
 
         <View style = {styles.Events}>
           
@@ -88,7 +96,7 @@ const styles = StyleSheet.create({
   Groups: {
     width: 300, // Box width
     height: 300, // Box height
-    backgroundColor: '#f5bf14', // Red background
+    backgroundColor: '#f5bf14', //orange 
     borderRadius:40,
     marginRight:20,
     justifyContent: 'center',
@@ -98,7 +106,7 @@ const styles = StyleSheet.create({
 
     width: 200, // Box width
     height: 200, // Box height
-    backgroundColor: '#01b1fe', // Red background
+    backgroundColor: '#01b1fe', // blue
     borderRadius:40,
     marginRight:20,
 
