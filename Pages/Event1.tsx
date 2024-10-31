@@ -4,7 +4,7 @@ import {View, Text,TouchableOpacity,StyleSheet} from 'react-native'
 const Event1 = () => {
     return (
         <View style = {styles.container}>
-            The Join Page
+            This is even 1
         </View>
 
 
