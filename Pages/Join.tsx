@@ -25,7 +25,7 @@ const Join = ({ navigation }) => {
                 <View style={styles.Group}>
                 
                    
-                <Text style = {styles.Clan_info}>Pedal Pushers </Text>
+                <Text style = {styles.Clan_info}>Pedal Pusher </Text>
                 <View style = {styles.Join_button}>
                     <Text style = {styles.Join_text}> Join </Text>
                     </View>
@@ -43,7 +43,7 @@ const Join = ({ navigation }) => {
             <View style={styles.Group}>
                 
                    
-                <Text style = {styles.Clan_info}>Trail Blazers </Text>
+                <Text style = {styles.Clan_info}>Trail Blazer </Text>
                 <View style = {styles.Join_button}>
                     <Text style = {styles.Join_text}> Join </Text>
                     </View>
@@ -52,7 +52,7 @@ const Join = ({ navigation }) => {
             <View style={styles.Group}>
                 
                    
-                <Text style = {styles.Clan_info}>The Spin Squad </Text>
+                <Text style = {styles.Clan_info}>The Spinner </Text>
                 <View style = {styles.Join_button}>
                     <Text style = {styles.Join_text}> Join </Text>
                     </View>
@@ -62,7 +62,7 @@ const Join = ({ navigation }) => {
             <View style={styles.Group}>
                 
                    
-                <Text style = {styles.Clan_info}>Road Warriors</Text>
+                <Text style = {styles.Clan_info}>Road Warrrr</Text>
                 <View style = {styles.Join_button}>
                     <Text style = {styles.Join_text}> Join </Text>
                     </View>
@@ -102,72 +102,72 @@ const styles = StyleSheet.create({
 
     headerbox: {
         width: '100%',
-        flexDirection: 'row', 
-        alignItems: 'center',   
-        justifyContent: 'flex-start', 
-        paddingVertical: 10,   
-        paddingHorizontal: 15,   
-        backgroundColor: 'white', 
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        paddingVertical: 10,
+        paddingHorizontal: 15,
+        backgroundColor: 'white',
     },
 
     headertext: {
         fontSize: 30,
         fontWeight: 'bold',
-        marginLeft: 10, 
+        marginLeft: 10,
         color: '#333',
     },
 
     GroupContainer: {
-        flex: 1,            
+        flex: 1,
         flexDirection: 'column',
-        alignItems: 'center', 
-        width: '100%',       
+        alignItems: 'center',
+        width: '100%',
     },
 
     Group: {
-        width: '100%',         
-        height: 60,      
-        justifyContent: 'space-between',
-        backgroundColor: '#01b1fe',
+        width: '100%',
+        height: 60,
         flexDirection: 'row',
-        borderRadius: 10,    
-        marginVertical: 2, 
-        padding: 10,        
-        shadowColor: '#000',  
-        shadowOffset: { width: 0, height: 2 }, 
-        shadowOpacity: 0.3,   
-        shadowRadius: 4,    
-    
+        alignItems: 'center', 
+        backgroundColor: '#01b1fe',
+        borderRadius: 10,
+        marginVertical: 2,
+        padding: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
     },
-    Clan_info : {
+
+    Clan_info: {
+        flex: 2, // Takes up more space for longer names
         color: '#000',
-        alignSelf : 'flex-start',
-
     },
-    Clan_altinfo : {
+
+    Join_button: {
+        flex: 1,
+        height: 35,
+        borderRadius: 25,
+        backgroundColor: '#f5bf14',
+        justifyContent: 'center', // Centers text vertically
+        alignItems: 'center',     // Centers text horizontally
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.3,
+        shadowRadius: 4,
+    },
+
+    Join_text: {
+        color: '#fff',
+        fontWeight: 'bold',
+    },
+
+    Clan_altinfo: {
+        flex: 1, // Ensures space for alt info
         color: '#000',
-        alignSelf : 'flex-end',
-
-
-
+        textAlign: 'right', // Aligns text to the right
     },
-
-    Join_button : {
-        height :35,
-        width :80,
-        borderRadius :25,
-        backgroundColor : '#f5bf14',
-        shadowColor: '#000',  
-        shadowOffset: { width: 0, height: 2 }, 
-        shadowOpacity: 0.3,   
-        shadowRadius: 4,    
-
-
-    },
-    Join_text : {
-        justifyContent: 'center',
-        alignItems: 'center',
-    }
 });
+
 
 export default Join;
