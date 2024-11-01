@@ -1,18 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import {View, Text,TouchableOpacity,StyleSheet} from 'react-native'
 
-import { NativeViewGestureHandler } from "react-native-gesture-handler";
+import { NativeViewGestureHandler, TextInput } from "react-native-gesture-handler";
 import Icon from 'react-native-vector-icons/MaterialIcons'; // or other icon sets like FontAwesome
 const Create = () => {
+    const [clanName,setClanName] = useState("");
+    const [clanDescription,setClanDescription] = useState("")
+
+
+
     return (
         <View style = {styles.container}>
             <View style = {styles.headerbox}>
                 <Text style = {styles.headertext}>Create A Group</Text>
 
             </View>
+            <View style = {[styles.container, spacer}
             <View style = {styles.GroupContainer}>
                 <View style = {styles.Text_Input_Box}>
-                    hey
+                    <TextInput
+                    placeholder="Group Name"
+                    value="clanName"
+                    onChangeText={setClanName} />
                 </View>
 
 
@@ -87,7 +96,20 @@ const styles = StyleSheet.create({
         shadowRadius: 4,
 
 
-    }
+    },
+    spacer: {
+        // Default style, no height or width
+      },
+      small: {
+        height: 10, // small spacer
+      },
+      medium: {
+        height: 20, // medium spacer
+      },
+      large: {
+        height: 30, // large spacer
+      },
+    
 
     
 
