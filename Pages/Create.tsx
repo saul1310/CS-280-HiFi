@@ -2,8 +2,9 @@ import React, {useState} from "react";
 import {View, Text,TouchableOpacity,StyleSheet} from 'react-native'
 
 import { NativeViewGestureHandler, TextInput } from "react-native-gesture-handler";
-import Icon from 'react-native-vector-icons/MaterialIcons'; // or other icon sets like FontAwesome
-const Create = () => {
+import Ionicons from 'react-native-vector-icons/Ionicons';// or other icon sets like FontAwesome
+
+const Create = ({navigation}) => {
     const [clanName,setClanName] = useState("");
     const [clanDescription,setClanDescription] = useState("")
 
@@ -12,20 +13,27 @@ const Create = () => {
     return (
         <View style = {styles.container}>
             <View style = {styles.headerbox}>
+            <TouchableOpacity onPress={() => navigation.navigate('Community')}>
+                    <Ionicons name="arrow-back-outline" size={24} color="#333" />
+                </TouchableOpacity>
                 <Text style = {styles.headertext}>Create A Group</Text>
+                
 
             </View>
-            <View style = {[styles.container, spacer}
-            <View style = {styles.GroupContainer}>
+            <View style = {styles.small_spaccer}></View>
+       
+            {/* <View style = {styles.GroupContainer}>
                 <View style = {styles.Text_Input_Box}>
                     <TextInput
                     placeholder="Group Name"
-                    value="clanName"
+                    value={clanName}
                     onChangeText={setClanName} />
                 </View>
 
 
-            </View>
+            </View> */}
+
+            
 
 
 
@@ -85,7 +93,7 @@ const styles = StyleSheet.create({
     },
 
     Text_Input_Box : {
-        width : '100%',
+        width : 200,
         height: 30,
         alignItems : 'center',
         backgroundColor :'#92b54a',
@@ -97,21 +105,11 @@ const styles = StyleSheet.create({
 
 
     },
-    spacer: {
-        // Default style, no height or width
+  
+      small_spaccer : {
+        height: 20, 
       },
-      small: {
-        height: 10, // small spacer
-      },
-      medium: {
-        height: 20, // medium spacer
-      },
-      large: {
-        height: 30, // large spacer
-      },
-    
 
-    
 
 
 
