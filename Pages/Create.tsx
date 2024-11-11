@@ -35,14 +35,31 @@ const Create = ({ navigation }) => {
                 </View>
                 <View style={styles.Field_row}>
                     <Text style={styles.labelText}>Enter a Description</Text>
-                    <Text style={styles.iconPlaceholder}>Icon</Text> {/* Placeholder for icon selection */}
+                    <Text style={styles.iconPlaceholder}>Description</Text> {/* Placeholder for icon selection */}
                 </View>
 
                 <View style={styles.Field_row}>
-                    <Text style={styles.labelText}> Group Type</Text>
-                    <Text style={styles.iconPlaceholder}>Icon</Text> {/* Placeholder for icon selection */}
+                    <Text style={styles.labelText}>Privacy </Text>
+                
+                    <Text style={styles.iconPlaceholder}>Open</Text> 
+                    <Text style={styles.iconPlaceholder}>Closed</Text>
+                    <Text style={styles.iconPlaceholder}>Private</Text>{/* Placeholder for icon selection */}
                 </View>
+
+                <View style={styles.Field_row}>
+                    <Text style={styles.labelText}>Group Type</Text>
+                
+                    <Text style={styles.iconPlaceholder}>Casual</Text> 
+                    <Text style={styles.iconPlaceholder}>Events</Text>
+                    <Text style={styles.iconPlaceholder}>Compettive</Text>{/* Placeholder for icon selection */}
+                </View>
+
+                <View style = {styles.Field_row}>
+                    <Text style = {styles.iconPlaceholder_green}>Create Group</Text>
+                </View>
+
             </View>
+
             
             <Text style={styles.footerText}>The create page</Text>
         </View>
@@ -112,6 +129,16 @@ const styles = StyleSheet.create({
         backgroundColor: '#d3d3d3',
         borderRadius: 15,
         color: '#555',
+    },
+    iconPlaceholder_green : {
+        width: 200, // Same width as Text_Input_Box to align with input box
+        height: 30,
+        textAlign: 'center',
+        lineHeight: 30,
+        backgroundColor: '#92b54a',
+        borderRadius: 15,
+        color: '#555',
+
     },
 
     small_spaccer: {
