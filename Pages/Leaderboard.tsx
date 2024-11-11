@@ -9,7 +9,10 @@ const Leaderboard = ({ navigation }) => {
         <TouchableOpacity onPress={() => navigation.navigate('Community')}>
           <Ionicons name="arrow-back-outline" size={24} color="#333" />
         </TouchableOpacity>
-        <Text style={styles.headertext}>Season Leaderboard</Text>
+        <Text style={styles.headertext}>Season Leaderboard --- </Text>
+
+        
+        <Text style={styles.headertext}>Winners will be announced in : 29:05:58</Text>
       </View>
 
       <View style={styles.leaderboardContainer}>
@@ -84,7 +87,7 @@ const Leaderboard = ({ navigation }) => {
           <View style={styles.GroupB}>
             <Text style={styles.Clan_info}>Gear Heads</Text>
             <View style={styles.Join_button}>
-              <Text style={styles.Join_text}>550Total Miles</Text>
+              <Text style={styles.Join_text}>550 Total Miles</Text>
             </View>
           
           </View>
@@ -92,7 +95,7 @@ const Leaderboard = ({ navigation }) => {
           <View style={styles.Group}>
             <Text style={styles.Clan_info}>Road Tribe</Text>
             <View style={styles.Join_button}>
-              <Text style={styles.Join_text}>549Total Miles</Text>
+              <Text style={styles.Join_text}>549 Total Miles</Text>
             </View>
           
           </View>
@@ -100,7 +103,7 @@ const Leaderboard = ({ navigation }) => {
           <View style={styles.Group}>
             <Text style={styles.Clan_info}>Cycle Lords</Text>
             <View style={styles.Join_button}>
-              <Text style={styles.Join_text}>530Total Miles</Text>
+              <Text style={styles.Join_text}>530 Total Miles</Text>
             </View>
           
           </View>
