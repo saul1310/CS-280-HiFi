@@ -111,6 +111,13 @@ const styles = StyleSheet.create({
     marginRight:20,
 
   },
+
+  imageContainer : {
+    width :50,
+    height : 50,
+    
+
+  },
 });
 
 export default Community;

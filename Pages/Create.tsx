@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity, StyleSheet, TextInput } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, TextInput ,Image} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Create = ({ navigation }) => {
@@ -59,6 +59,11 @@ const Create = ({ navigation }) => {
                 </View>
 
             </View>
+
+         
+       
+      
+
 
             
             <Text style={styles.footerText}>The create page</Text>
@@ -150,6 +155,7 @@ const styles = StyleSheet.create({
         paddingVertical: 20,
         color: '#333',
     },
+
 });
 
 export default Create;
