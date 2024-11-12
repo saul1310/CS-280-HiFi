@@ -31,46 +31,28 @@ const Home = ({ navigation }) => {
             </Text>
             <Navbar navigation={navigation} /> 
             <Spacer height={20} />
+
+            {/* Image Container */}
             <View style={styles.imageContainer}>
                 <Image 
                     source={require('../assets/homeimage.jpg')}
                     style={styles.image}
                 />
             </View>
-            <Spacer height={40} />
+            <Spacer height={20} />
 
-            {/* Container for two text blocks */}
-            <View style={styles.textRow}>
-                <View style={styles.leftTextBlock}>
-                    <Text>Okay, I pull up, hop out at the after party
-You and all your friends, yeah, they love to get naughty
-Sippin' on that Henn', I know you love that Bacardi (Sonny Digital)
-1942, I take you back in that 'Rari
-Okay, I pull up, hop out at the after party
-You and all your friends, yeah, they love to get naughty
-Sippin' on that Henn', I know you love that Bacardi
-1942, I take you back in that 'Rari
-Switchin' lanes and I'm seein' lights, you know I watch the curb
-Smokin' weed, you know I'm gettin' high, you know it calm my nerves
-Trappin' hard, pumpin' non-stop, the bag I had to earn
-You can try, but you might fail again, you know you never learn</Text>
-                </View>
+            {/* Project Title */}
+            <Text style={styles.projectTitle}>Willamette EBike Project</Text>
+            <Spacer height={20} />
 
-                <View style={styles.rightTextBlock}>
-                    <Text>Okay, I pull up, hop out at the after party
-You and all your friends, yeah, they love to get naughty
-Sippin' on that Henn', I know you love that Bacardi (Sonny Digital)
-1942, I take you back in that 'Rari
-Okay, I pull up, hop out at the after party
-You and all your friends, yeah, they love to get naughty
-Sippin' on that Henn', I know you love that Bacardi
-1942, I take you back in that 'Rari
-Switchin' lanes and I'm seein' lights, you know I watch the curb
-Smokin' weed, you know I'm gettin' high, you know it calm my nerves
-Trappin' hard, pumpin' non-stop, the bag I had to earn
-You can try, but you might fail again, you know you never learn</Text>
-                </View>
-            </View>
+            {/* Introductory Information */}
+            <Text style={styles.introText}>
+                Welcome to the Willamette EBike Project! Our mission is to promote sustainable, eco-friendly transportation options for all students on campus. With our convenient e-bike rental services, you'll be able to get around campus efficiently and reduce your carbon footprint.
+            </Text>
+            <Spacer height={10} />
+            <Text style={styles.introText}>
+                Whether you’re commuting to class, running errands, or exploring the city, our e-bikes are designed to make your journey smoother and more enjoyable. Join us in revolutionizing transportation at Willamette University!
+            </Text>
         </View>
     );
 };
@@ -87,34 +69,31 @@ const styles = StyleSheet.create({
         marginTop: 100,
     },
     imageContainer: {
-        width: '90%',             
-        height: 300,               
-        overflow: 'hidden',       
-        marginBottom: 20, 
-        marginTop: 20,            
-        alignItems: 'center',    
+        width: '50%',
+        height: 300,
+        overflow: 'hidden',
+        marginBottom: 20,
+        marginTop: 20,
+        alignItems: 'center',
+        borderRadius: 40,
     },
     image: {
-        width: '100%',             
-        height: '100%',         
-        resizeMode: 'cover',       
+        width: '100%',
+        height: '100%',
+        resizeMode: 'cover',
     },
-
-    textRow: {
-        flexDirection: 'row',     
-        justifyContent: 'space-between', 
-        width: '90%',              
-        marginTop: 20,
+    projectTitle: {
+        fontSize: 32,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: '#333',
     },
-    leftTextBlock: {
-        width: '45%',            
-        // backgroundColor: '#f0f0f0', 
-        padding: 10,               
-    },
-    rightTextBlock: {
-        width: '45%',             
-        // backgroundColor: '#f0f0f0', 
-        padding: 10,              
+    introText: {
+        fontSize: 16,
+        textAlign: 'center',
+        color: '#555',
+        marginHorizontal: 20,
+        marginBottom: 10,
     },
 });
 
