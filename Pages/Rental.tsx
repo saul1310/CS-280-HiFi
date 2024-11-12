@@ -1,6 +1,6 @@
 // Pages/Community.tsx
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image ,StyleSheet} from 'react-native';
 import Navbar from '../components/NavBar';
 
 const Rental = () => {
